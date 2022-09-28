@@ -18,7 +18,7 @@ function Navbars() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
                     {navbarData.map((data)=>{
-                        const {id,title,subTitles} = data;
+                        const {id,title,subTitles,url} = data;
                         if(subTitles){
                             return <NavDropdown title={title} className="" id="basic-nav-dropdown">
                             {subTitles.map((subTitl)=>{

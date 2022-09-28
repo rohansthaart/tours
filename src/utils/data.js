@@ -87,6 +87,7 @@ export const navbarData = [
     {
         id:10,
         title:"Contact Us",
+        url:"#contact"
     }
 ]
 
@@ -114,7 +115,7 @@ export const tour=[
     },{
         url:'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/62/71/2c/the-heart-soul-of-pokhara.jpg?w=600&h=400&s=1',
         title:'Pokhara Bhraman',
-        details:'Pokhara is beautiful place'
+        details:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis magni modi architecto itaque eligendi doloribus nobis ratione tempora assumenda reiciendis. Enim molestias quasi est aspernatur dolores, voluptatibus, in dolore vel commodi veniam ex reiciendis deleniti dolor. Sed eveniet laudantium, magni ipsa eaque commodi doloribus aut animi aliquid, veniam temporibus iure!'
 
     }
 ]

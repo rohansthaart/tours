@@ -14,7 +14,7 @@ function Footer() {
           <div className="col-sm-12 col-md-4 col-12">
             <img
               src={logo}
-              style={{ height: "60%", width: "60%" }}
+              style={{ height: "80%", width: "80%" }}
             />
           </div>
 
@@ -55,37 +55,12 @@ function Footer() {
 
             
           </div>
-          <div className=" col-md-4" style={{ padding: "0" }}>
-            <div
-              className="mapouter"
-              style={{
-                position: "relative",
-                textAlign: "left",
-                height: "249px",
-                width: "99%",
-              }}
-            >
-              <div
-                className="gmap_canvas"
-                style={{
-                  overflow: "hidden",
-                  background: "none!important",
-                  height: "249px",
-                  width: "99%",
-                }}
-              >
-                <iframe
-                  width="99%"
-                  height="249"
-                  id="gmap_canvas"
-                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-                  frameBorder="0"
-                  scrolling="no"
-                  marginHeight="0"
-                  marginWidth="0"
-                ></iframe>
-              </div>
-            </div>
+          <div className=" col-md-4" id="#contact" style={{ padding: "0" }}>
+           <h6>Contact Us</h6>
+           <p><i class="fas fa-phone-alt"></i> +977  9803748848 </p>
+            <p><i class="fas fa-inbox"></i> toalltours@gmail.com</p>
+            <p><i class="fas fa-map"></i> 1F,Near Shrestha PhotoCopy, Putalisadak, Kathmandu, Nepal</p>
+
           </div>
         </div>
         <hr />
@@ -93,16 +68,15 @@ function Footer() {
 
       <div className="">
         <div className="row">
-          <div className="col-md-8 col-sm-6 col">
+          <div className="center col-sm-6 col" style={{marginLeft:"20px"}}>
             <p className="copyright-text">
-              Copyright &copy; 2020 All Rights Reserved by PASA
+              Copyright &copy; 2022 All Rights Reserved by Teju & Oju
             </p>
-           
               Terms & Conditions
-           
           </div>
         </div>
-        <div className="row" style={{ justifyContent: "center" }}>
+
+        <div style={{textAlign:'center'}}>
           <ul className="social-icons">
             <li>
               <FacebookIcon />

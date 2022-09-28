@@ -13,6 +13,8 @@ function App() {
 <Specification/>
 <Feautred/>
 <Tours/>
+<Tours/>
+<Tours/>
 <Footer/>
   </>
   );

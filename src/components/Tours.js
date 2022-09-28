@@ -10,7 +10,7 @@ function Tours() {
         {tour.map((tour)=>{
             return(
                 <div className="col-md-3 col-sm-6 ">
-    <SingleTour url={tour.url} title={tour.title} detail={tour.details}/>
+    <SingleTour url={tour.url} title={tour.title} detail={tour.details.slice(0,85)}/>
                 </div>
             )
         })}
