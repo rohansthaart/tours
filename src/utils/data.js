@@ -1,94 +1,36 @@
-export const navbarData = [
-    {   id:1,
-        title:'Nepal',
-        subTitles:[{
-            subTitle:"City Tours"
-        },{
-            subTitle:"Heritage Tours"
-        },{
-            subTitle:"Wildlife and Cultural Tours"
-        },{
-            subTitle:"Bird Watching Tours"
-        },{
-            subTitle:"Religious Tours"
-        },{
-            subTitle:"Midhill Tours",
-            subSubTitles:[
-               { subSubTitle:"khaptad"},
-               { subSubTitle:"rara"},]
-        },{
-            subTitle:"Home stay"
-        },
-        {
-            subTitle:"Day Tours"
-        },
-        {
-            subTitle:"Hikies"
-        },
-        {
-            subTitle:"MICE"
-        }
-    ]
+export const Categorys = [
+    {  
+        category:'Nepal',
+        subCategorys:[
+            {subCategory:"City Tours"},
+            {subCategory:"Heritage Tours",},
+            {subCategory:"Wildlife Tour"},
+            {subCategory:"Bird Watching Tours"},
+            {subCategory:"Religious Tours"},
+            {subCategory:"Midhill Tours"},
+            {subCategory:"Home stay"},
+            {subCategory:"Day Tours"},
+            {subCategory:"Hikies"},
+            {subCategory:"MICE"}]
     },
     {   
-        id:2,
-        title:"Trekking",
-        subTitles:[
-            {
-            subtitle:"Everest",
-            subSubTitles:[
-                { subSubTitle:"3 Passes Trek"},
-                { subSubTitle:"EBC"},
-                { subSubTitle:"Kalapathar"},
-                { subSubTitle:"Gokyu"},
-            ]
-        },
-    {  
-        subTitle:"Annapurna Circuit",
+        category:"Trekking",
+        subCategorys:[
+            {subCategory:"Everest"},
+            {subCategory:"Annapurna"},
+            {subCategory:"Langtang"},
+            {subCategory: "Mustang"},
+            {subCategory: "Manaslu"},
+            {subCategory:"Dolpa"},
+            {subCategory:"Panch Pokhari"},
+            {subCategory:"Dhaulagiri"},
+            {subCategory:"Narphu"}]
     },
-    {
-        subTitle:"Langtang"
-    },
-    {subTitle:"Mustang"},
-    {subTitle:"Manaslu"},
-    {subTitle:"Dolpa"},
-    {subTitle:"Panch Pokhari"},
-    {subTitle:"Dhaulagiri"},
-    {subTitle:"Narphu"},
-]
-    },
-    {   id:4,
-        title:"Adventure",
-        subTitles:[
-            {subTitle:"Motor Bike"},
-            {subTitle:"Rafting"},
-            {subTitle:"Bungy Jumping and Swing"},
-            {subTitle:"Zipline"},
-            {subTitle:"paragliding"},
-            {subTitle:"Mountain Biking"},
-            {subTitle:"Rock Climbing"},
-            {subTitle:"Canyoning"},
-            {subTitle:"Caving"},
-        ]
-    },
-   { id:6,
-        title:"Wellness and Meditation",
-        subTitles:[{subTitle:"Paraphing"}]
-    },{ id:7,
-        title:"Outbound",
-    },
-    {
-        id:8,
-        title:"Kailash Mansarovar"
-    },{
-        id:9,
-        title:"About",
-    },
-    {
-        id:10,
-        title:"Contact Us",
-        url:"#contact"
-    }
+   { 
+        category:"Wellness and Meditation",
+        subCategorys:[{subCategory:"Paraphing"}]
+    } 
+   
 ]
 
 

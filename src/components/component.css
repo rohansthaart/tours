@@ -1,4 +1,44 @@
+:root{
+--clr-primary-3: hsl(222, 5%, 49%);
+
+}
+
+
 img {
     width: 175px;
     margin-left: -15px;
   }
+
+  .wrapper{
+    background: #031a5b;
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  color: #dae1e7;
+  }
+   .wrapper a {
+    color: var(--clr-primary-3);
+    padding: 0.5rem;
+    transition: #dae1e7;
+  }
+  .wrapper a:hover {
+    color: #dae1e7;
+  }
+  
+
+  
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}

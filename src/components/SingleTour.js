@@ -1,23 +1,49 @@
 import React from 'react'
-import "./singleTour.css"
-function SingleTour({url,title,detail}) {
+import styled from 'styled-components'
+import {Link} from 'react-router-dom'
+function SingleTour({url,title,detail,id}) {
   return (
-    <div className="card single-card" style={{width: "18rem", height:"24rem", margin:"20px"}}>
+    <Wrapper>
+    <div className="">
+    <div className="card single-card" >
+      
           <img className='card-img-top'
-            src={url}
-            style={{ objectFit: "fill", padding: "1px",margin:"0px", width: "100%" }}
-          />
+            src={url}/>
+          
         <div className='card-body'>
         <h5
-          style={{ marginLeft: "6px", textAlign: "left"}}
+          style={{ marginLeft: "0px", textAlign:"left"}}
           className="card-title"
         >{title}
         </h5>
-        <p class="card-text">{detail}...</p>
-        <a href="#" class="btn btn-primary">View Details</a>
+        <p className="card-text">{detail}...</p>
+     <Link to={`/tours/${id}`}> View Details</Link>
       </div>
     </div>
+    
+    </div>
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.main`
+.single-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .single-card{
+    width: 17rem;
+    height: 24rem;
+  }
+  .card-img-top{
+    object-fit: cover;
+    padding: 0.1rem;
+    margin: 0px;
+    width: auto;
+    height: 40%;
+  }
+
+`
+
+
 
 export default SingleTour

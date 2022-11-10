@@ -75,11 +75,7 @@
     }
   }
 
-  .social-icons  li {
-    display: inline-block;
-    align-items: center;
-
-  }
+  
  
   
  
@@ -95,3 +91,18 @@
     height: 50px;
     margin: 1rem;
   }
+
+   li{
+    display: inline-block;
+  }
+
+  .social{
+    text-align: center;
+    }
+
+    footer{
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-top: 0;
+    }

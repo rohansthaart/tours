@@ -1,3 +1,5 @@
+
+
 *,
 ::after,
 ::before {
@@ -13,9 +15,7 @@ body {
     line-height: 1.5;
     font-size: 0.875rem;
   }
-  ul {
-    list-style-type: none;
-  }
+ 
   a {
     text-decoration: none;
   }
@@ -40,4 +40,23 @@ body {
   h4 {
     font-size: 0.875rem;
   }
- 
+ .about-content {
+  
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5rem;
+    
+    color: #031a5b;
+ }
+ .about-heading {
+  
+  font-family: 'Roboto', sans-serif;
+  font-family:'Indie Flower', cursive;
+  font-size: 2.5rem;
+  color: #031a5b;
+ }
+
+ .page-100 {
+  min-height: calc(100vh - 10rem);
+  padding: 5rem 0;
+}

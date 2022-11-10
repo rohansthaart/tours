@@ -1,0 +1,10 @@
+import Home from './HomePage'
+import About from './AboutPage'
+import SingleTour from './SingleTourPage'
+import Error from './ErrorPage'
+import Tours from './ToursPage'
+import Entry from './EntryPage'
+import Query from './QueryPage'
+import Category from './CategoryPage'
+import SubCategory from './SubCategoryPage'
+export {Home,About,SingleTour,Error,Tours,Entry,Query,Category,SubCategory}

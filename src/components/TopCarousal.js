@@ -1,11 +1,11 @@
 import React from "react";
-import "./topCarousel.css";
 import banner3 from '../assets/banner3.png'
 import banner1 from '../assets/banner1.png'
 import banner2 from '../assets/banner2.png'
-
+import styled from 'styled-components'
 function TopCarousel() {
   return (
+    <Wrapper>
     <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
     <div className="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -14,24 +14,24 @@ function TopCarousel() {
     </div>
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img src={banner2} className="d-block w-100" alt="..."/>
+        <img src={banner2} className="d-block carousel-image" alt="..."/>
         <div className="carousel-caption d-none d-md-block">
-        <h1>We Provide Travel Service At Minimum Cost</h1>
-          <p>Some representative placeholder content for the first slide.</p>
+        <h1> At Minimum Cost</h1>
+         
         </div>
       </div>
       <div className="carousel-item">
-        <img src={banner3} className="d-block w-100" alt="..."/>
+        <img src={banner3} className="d-block  carousel-image" alt="..."/>
         <div className="carousel-caption d-none d-md-block">
         <h1>Quality Travelling, Quality Service</h1>
-          <p>Some representative placeholder content for the second slide.</p>
+          
         </div>
       </div>
       <div className="carousel-item">
-        <img src={banner1} className="d-block w-100" alt="..."/>
+        <img src={banner1} className="d-block carousel-image" alt="..."/>
         <div className="carousel-caption d-none d-md-block">
          <h1>One Stop For Quality Travel</h1>
-          <p>Some representative placeholder content for the third slide.</p>
+          
         </div>
       </div>
     </div>
@@ -44,8 +44,25 @@ function TopCarousel() {
       <span className="visually-hidden">Next</span>
     </button>
   </div>
-   
+  </Wrapper>
   );
 }
 
+const Wrapper = styled.main`
+ .carousel-image{
+  margin: 0;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .carousel-image{
+  margin: 0;
+  height: 500px;
+ object-fit: cover;
+}
+}
+`
+
+
 export default TopCarousel;
+
+

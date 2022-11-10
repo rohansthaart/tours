@@ -1,12 +1,12 @@
 import React from 'react'
-import TripCard from './TripCard'
-import './fetured.css'
+import Tours from './Tours'
+
 function Feautred() {
   return (
     <section>
         <h1>Featured Trips</h1>
         <h7>Trending Destinations</h7>
-        <TripCard/>
+        <Tours/>
     </section>
   )
 }
