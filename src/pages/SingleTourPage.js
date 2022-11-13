@@ -5,9 +5,9 @@ import {useParams} from 'react-router-dom'
 import {useTourContext} from '../context/tour_context'
 
 function SingleTourPage() {
-  const {} = useTourContext();
+
   const {id} = useParams()
-  const {tours,isLoading} = useTourContext();
+  const {tours} = useTourContext();
   const selectedTour = tours.filter((tour)=> tour._id === id);
 
   return (

@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import {useTourContext} from '../context/tour_context'
 import {useParams} from 'react-router-dom'
 import axios from 'axios'
-import Overview from './Overview'
+
 import './toursDetails.css'
 import EnquiryForm from './EnquiryForm'
 function ToursDetails() {
@@ -73,11 +73,12 @@ useEffect(()=>{
         <ul  style={{ marginLeft: "55px" }}>
                 {selectedTour.image.map((img,i) => (
                   <li className='ba' key={i+500}>
-                    <a data-target="#myCarouselArticle" data-slide-to={"{0++}"}>
+                    <a href data-target="#myCarouselArticle" data-slide-to={"{0++}"}>
                       <img
                         className="img-fluid fit-image"
                         src={img}
                         onClick={() => setSelectedImage(img)}
+                        alt=""
                       />
                     </a>
                   </li>
@@ -132,11 +133,11 @@ useEffect(()=>{
             onClick={() => setTitle("Overview")}>
             <h3>Overview</h3>
           </button>
-          {itenerary !="" ?
+          {itenerary !=="" ?
           <button className="btn" onClick={() => setTitle("Itinerary")}>
             <h3>Itinerary</h3>
           </button>:null}
-          {(included !="")?<button className="btn" onClick={() => setTitle("Included")}>
+          {(included !=="")?<button className="btn" onClick={() => setTitle("Included")}>
             <h3>What's Included</h3>
           </button>:null}
         </div>

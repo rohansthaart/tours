@@ -8,7 +8,7 @@ function SingleTour({url,title,detail,id}) {
     <div className="card single-card" >
       
           <img className='card-img-top'
-            src={url}/>
+            src={url} alt=""/>
           
         <div className='card-body'>
         <h5

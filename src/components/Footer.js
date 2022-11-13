@@ -2,10 +2,7 @@ import React from 'react'
 import "./footer.css";
 import logo from '../assets/logo.svg'
 import { Link } from "react-router-dom";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
 function Footer() {
   const categories = [
     "Nepal",
@@ -23,6 +20,7 @@ function Footer() {
             <img
               src={logo}
               style={{ height: "80%", width: "80%" }}
+              alt="teju-and-oju"
             />
           </div>
 
@@ -42,24 +40,24 @@ function Footer() {
             <div className="row ">
             <div className="col-3 ">
 
-            <img src="https://admin.ntb.gov.np/image-cache/ntb_logo-1664168472.jpg?p=main&s=7fc637904b916806a88407a28df202e7" alt="" className='footer-logo'/>
+            <img src="https://admin.ntb.gov.np/image-cache/ntb_logo-1664168472.jpg?p=main&s=7fc637904b916806a88407a28df202e7" alt="ntb" className='footer-logo'/>
             </div>
             <div className="col-3">
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Emblem_of_Nepal_%282020%29.svg" alt="" className='footer-logo'/>
+            <img src="https://logos-download.com/wp-content/uploads/2021/07/Emblem_of_Nepal.png" alt="nepal-goverment" className='footer-logo'/>
             </div>
             </div>
             <h6>WE ACCEPT</h6>
             <div className="row ">
             <div className="col-2 ">
 
-            <img src="https://esewa.com.np/common/images/esewa-icon-large.png" alt="" className='footer-logo'/>
+            <img src="https://esewa.com.np/common/images/esewa-icon-large.png" alt="esewa" className='footer-logo'/>
             </div>
             <div className="col-2">
-            <img src="https://banner2.cleanpng.com/20180418/xie/kisspng-paypal-logo-e-commerce-payment-system-paypal-5ad78137f1e9c2.9153968515240727599909.jpg" alt="" className='footer-logo'/>
+            <img src="https://banner2.cleanpng.com/20180418/xie/kisspng-paypal-logo-e-commerce-payment-system-paypal-5ad78137f1e9c2.9153968515240727599909.jpg" alt="paypal" className='footer-logo'/>
             </div>
             <div className="col-2">
-            <img src="https://banner2.cleanpng.com/20180802/xri/kisspng-logo-mastercard-vector-graphics-font-visa-mastercard-logo-png-photo-png-arts-5b634298cd58d5.9008352515332317688411.jpg" alt="" className='footer-logo'/>
+            <img src="https://banner2.cleanpng.com/20180802/xri/kisspng-logo-mastercard-vector-graphics-font-visa-mastercard-logo-png-photo-png-arts-5b634298cd58d5.9008352515332317688411.jpg" alt="mastercard" className='footer-logo'/>
             </div>
             </div>
 
@@ -89,10 +87,10 @@ function Footer() {
 
         <div className='social'>
           <ul>
-        <li><FacebookIcon /></li>
-        <li><InstagramIcon /></li>
-            <li><TwitterIcon /></li>
-            <li><LinkedInIcon /></li>
+        <li><i className="fab fa-facebook-square fa-2x"></i></li>
+        <li><i className="fab fa-instagram fa-2x"></i></li>
+            <li><i className="fab fa-twitter-square fa-2x"></i></li>
+            <li><i className="fab fa-linkedin fa-2x"></i></li>
           </ul>
         </div>
       

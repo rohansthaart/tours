@@ -1,12 +1,12 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { Link,useNavigate} from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '../assets/logo.svg' 
-import {useTourContext} from '../context/tour_context'
+
 import { Categorys } from '../utils/data'
 
 function Test() {
-  const {tours,isLoading,} = useTourContext();
+ 
  
   const navigate = useNavigate();
   
@@ -29,7 +29,7 @@ function Test() {
             
     {Categorys.map((category,index)=>(
          <li className="nav-item dropdown" key={index}>
-         <a className="nav-link dropdown-toggle"  onClick={()=>navigate('/category/'+category.category)} id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {category.category} </a>
+         <a className="nav-link dropdown-toggle" href="true" onClick={()=>navigate('/category/'+category.category)} id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {category.category} </a>
          <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
              {category.subCategorys.map((sub,i)=>{
                   return <li key={i} className='dropdown-item' onClick={()=>navigate('/category/subCategory/'+sub.subCategory)}>{sub.subCategory}</li>
