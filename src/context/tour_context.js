@@ -8,17 +8,24 @@ export const TourProvider = ({children})=>{
     const [isLoading,setIsLoading] = useState(false);
     const [tours,setTours] = useState([]);
     
+    const config = {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+          
+        }
+      };
     
 
     const fetchTours = async (url)=>{
         setIsLoading(true)
         try{
-            const response = await axios.get(url)
+            const response = await axios.get(url,config)
             const tour= await response.data
             setIsLoading(false)
             setTours(tour)
             return true
-        
+        //changed
         }catch(error){
             console.log(error)
         }
