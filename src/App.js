@@ -1,15 +1,17 @@
 import React from 'react'
 
 import { BrowserRouter , Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import {Home,About,SingleTour,Error,Tours, Entry, Query,Category,SubCategory} from './pages'
 import Footer from './components/Footer'
-import Test from './components/test'
+
 
 function App() {
   return (
     <BrowserRouter>
-    <Test/>
+  
       
+        <ScrollToTop/>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/about" element={<About/>}/>

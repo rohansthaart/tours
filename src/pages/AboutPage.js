@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react'
  import PageHero from '../../src/components/PageHero'
  import '../index.css'
+ import Navbar from '../components/Navbar'
 function AboutPage() {
   useEffect(()=>{
     document.title = "About Us"
   })
   return (
-    <div className=''>
+    
+    <>
+      <Navbar/>
         <PageHero title='About Us'/>
       <div className='container'>
         <h3 className=' about-heading'>“We travel, initially, to lose ourselves; and we travel, next to find 
@@ -40,7 +43,7 @@ which will assure our ultimate success.</p>
 <p className='about-content'>Our vision is to empower our employees to deliver total client satisfaction and best travel 
 experience.</p>
       </div>
-    </div>
+    </>
   )
 }
 

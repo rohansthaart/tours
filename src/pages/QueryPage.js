@@ -1,6 +1,7 @@
 import React from 'react'
 import {useQueryContext} from '../context/query_context'
 import axios from 'axios'
+import Navbar from '../components/Navbar'
 
 function QueryPage() {
     const {query,isLoading,fetchQuery} = useQueryContext()
@@ -18,6 +19,7 @@ function QueryPage() {
     }
   return (
     <div className=''>
+        <Navbar/>
     <table className="table">
   <thead>
     <tr>

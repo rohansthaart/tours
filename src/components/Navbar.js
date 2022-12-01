@@ -5,7 +5,7 @@ import logo from '../assets/logo.svg'
 
 import { Categorys } from '../utils/data'
 
-function Test() {
+function Navbar() {
  
  
   const navigate = useNavigate();
@@ -23,13 +23,13 @@ function Test() {
         <ul className="navbar-nav me-auto mb-2 mb-lg-0"> 
            
             
-            <li className="nav-item">
+            <li className="nav-item" >
                 <Link className="nav-link" to="/">HOME</Link>
             </li>
             
     {Categorys.map((category,index)=>(
          <li className="nav-item dropdown" key={index}>
-         <a className="nav-link dropdown-toggle" href="true" onClick={()=>navigate('/category/'+category.category)} id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {category.category} </a>
+         <a className="nav-link dropdown-toggle" href onClick={()=>navigate('/category/'+category.category)} id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {category.category} </a>
          <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
              {category.subCategorys.map((sub,i)=>{
                   return <li key={i} className='dropdown-item' onClick={()=>navigate('/category/subCategory/'+sub.subCategory)}>{sub.subCategory}</li>
@@ -86,4 +86,4 @@ const Wrapper = styled.main`
 
 `
 
-export default Test
+export default Navbar

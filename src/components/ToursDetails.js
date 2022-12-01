@@ -2,13 +2,13 @@ import React,{useState,useEffect} from 'react'
 import {useTourContext} from '../context/tour_context'
 import {useParams} from 'react-router-dom'
 import axios from 'axios'
-
+import Loader from './Loader'
 import './toursDetails.css'
 import EnquiryForm from './EnquiryForm'
 function ToursDetails() {
 
 
-  const {tours} = useTourContext();
+  const {tours,isLoading} = useTourContext()
   const { id } = useParams();
   const selectedTour = tours.filter((tour)=> tour._id === id)[0];
   const {
@@ -54,6 +54,9 @@ useEffect(()=>{
   fetchWeather(location)
 },[])  
 
+if(isLoading){
+  return <Loader/>
+}
   return (
 
     <div className="container">

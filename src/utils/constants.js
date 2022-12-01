@@ -1,5 +1,5 @@
 
 
-export const tour_url = 'https://teju-and-oju-api.onrender.com/api/v1/tours'
+export const tour_url = 'https://travels.onrender.com/api/v1/tours'
 
-export const query_url = 'https://teju-and-oju-api.onrender.com/api/v1/query'
+export const query_url = 'https://travels.onrender.com/api/v1/query'

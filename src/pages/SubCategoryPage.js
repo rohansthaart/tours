@@ -3,6 +3,7 @@ import {useParams} from 'react-router-dom'
 import {useTourContext} from '../context/tour_context'
 import SingleTour from '../components/SingleTour'
 import PageHero from '../components/PageHero'
+import Navbar from '../components/Navbar'
 function SubCategoryPage() {
     const {tours} = useTourContext();
     const {name} = useParams();
@@ -16,6 +17,7 @@ function SubCategoryPage() {
 
 
   return (<>
+    <Navbar/>
       <PageHero head={name}/>
       <div className='container' style={{alignItem:'center',justifyContent:'center'}}>
       <h2 style={{textAlign:"center"}}>{name}</h2>

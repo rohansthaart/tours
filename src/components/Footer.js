@@ -12,7 +12,7 @@ function Footer() {
     "Outbound","Kailash Mansarovar"
   ]
   return (
-    <footer id="contact">
+    <footer >
     <div className="site-footer">
       <div className="">
         <div className="row" style={{margin:'0px'}}>
@@ -63,11 +63,11 @@ function Footer() {
 
             
           </div>
-          <div className="col-md-2 col-sm-6 col-lg-2"  style={{ padding: "0" }}>
+          <div className="col-md-2 col-sm-6 col-lg-2"  style={{ margin: "1" }} id="contact">
            <h6>Contact Us</h6>
-           <p><a href="tel:+9779843686191"><i className="fas fa-phone-alt"></i> +977  9803748848 </a></p>
+           <p><a href="tel:+9779843686191"><i className="fas fa-phone-alt"></i> +977  01-4543345 </a></p>
             <p><a href="mailto:toalltours@gmail.com"><i className="fas fa-inbox"></i> toalltours@gmail.com</a></p>
-            <p><i className="fas fa-map"></i> 1F,Near Shrestha PhotoCopy, Putalisadak, Kathmandu, Nepal</p>
+            <p><i className="fas fa-map"></i> Ward-4, Baluwatar, Kathmandu, Nepal</p>
 
           </div>
         </div>
@@ -76,11 +76,11 @@ function Footer() {
 
       
         <div className="">
-          <div className="center col-sm-6 col" style={{marginLeft:"2rem"}}>
+          <div className="copyright" >
             <p className="copyright-text">
               Copyright &copy; {new Date().getFullYear()} All Rights Reserved by Teju & Oju Alltours Pvt. Ltd. by S.I.D. International Pvt. Ltd.
             </p>
-              Terms & Conditions
+           
           </div>
         </div>
 

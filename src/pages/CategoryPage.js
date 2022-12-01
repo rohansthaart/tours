@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import SingleTour from '../components/SingleTour'
 import { useTourContext } from '../context/tour_context';
 import PageHero from '../components/PageHero';
+import Navbar from '../components/Navbar';
 function CategoryPage() {
     const {tours} = useTourContext()
     const {categoryName} = useParams()
@@ -13,6 +14,7 @@ function CategoryPage() {
     })
   return (
     <>
+      <Navbar/>
         <PageHero head={categoryName}/>
        
         <div className='container' style={{alignItem:'center',justifyContent:'center'}}>

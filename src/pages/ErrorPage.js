@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 const ErrorPage = () => {
   return <Wrapper className='page-100'>
+      <Navbar/>
     <section>
     <h1>404</h1>
     <h3>Sorry, the page you tried cannot be found</h3>
